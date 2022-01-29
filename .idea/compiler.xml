@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="Gateway-service" />
+        <module name="auth-service" />
+        <module name="applicationMS1" />
+        <module name="Compte-Service" />
+        <module name="Eureka Discovery Service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Billing-service" target="1.8" />
+      <module name="Customer-service" target="1.8" />
+      <module name="Inventory-service" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="Billing-service" options="-parameters" />
+      <module name="Compte-Service" options="-parameters" />
+      <module name="Customer-service" options="-parameters" />
+      <module name="Eureka Discovery Service" options="-parameters" />
+      <module name="Gateway-service" options="-parameters" />
+      <module name="Inventory-service" options="-parameters" />
+      <module name="auth-service" options="-parameters" />
+    </option>
+  </component>
+</project>
